@@ -15,7 +15,7 @@ class OurHeap:
                 other operations O(log n) in expectation
                 and O(n) in worst case, due to the usage of a dictionary
     """
-    def __init__(self, items):
+    def __init__(self, *items): # to enable " for x in items "
         self.n = 0
         self.heap = [None]  # index 0 will be ignored
         self.rank = {}
